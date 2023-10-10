@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <>
       <Head>
-        <title>Sightread: About</title>
+        <title>AutoBand: About</title>
       </Head>
       <div className="relative">
         <AppBar />
@@ -55,6 +55,7 @@ export default function AboutPage() {
                 <GettingStarted />
                 <MusicSelectionSection />
                 <BrowserCompatibilitySection />
+                <RemainingTasks/>
                 <RoadmapSection />
                 <FeedbackSection />
               </div>
@@ -70,11 +71,11 @@ function WhatSection() {
   return (
     <Article
       header="What"
-      first="Sightread is a free and open-source webapp for learning to play Piano."
+      first="AutoBand (made based on Sightread )is an open-source webapp for learning to play Piano."
     >
       <p>
-        Sightread is great for beginners – you can play songs without needing to learn sheet music.
-        Sightread creates an intuitive <span className="italic">Falling Notes</span> visualization
+        AutoBand (made based on Sightread) is great for beginners – you can play songs without needing to learn sheet music.
+        AutoBand creates an intuitive <span className="italic">Falling Notes</span> visualization
         of a song, similar to rhythm games like Guitar Hero.
       </p>
       <Sizer height={8} />
@@ -86,12 +87,12 @@ function WhatSection() {
       />
       <Sizer height={24} />
       <p>
-        For those who want to learn sheet music, Sightread offers{' '}
+        For those who want to learn sheet music, AutoBand offers{' '}
         <span className="italic">Sheet Hero (beta)</span> mode. Sheet Hero is a halfway point
         between the simplicity of falling notes and the full complexity of sheet music. Notes are
         laid out on a musical staff, but timing is simplified. Sheet Hero represents the duration of
         notes with a tail instead of beat denominations. Key signatures are also optional in this
-        mode. Sightread will by default display a song in it’s original key, but you may change the
+        mode. AutoBand will by default display a song in it’s original key, but you may change the
         key to any that you prefer.
       </p>
       <Sizer height={8} />
@@ -120,7 +121,7 @@ function GettingStarted() {
         the song will wait for you to hit the right key before progressing.
       </p>
       <p>
-        Sightread works best in conjunction with a Piano teacher. Falling notes will allow you to
+        AutoBand works best in conjunction with a Piano teacher. Falling notes will allow you to
         have more fun with less experience, but it is no replacement for formal education. Learning
         music theory will help you get a more holistic music experience than learning solely
         learning how to play songs.
@@ -133,21 +134,21 @@ function MusicSelectionSection() {
   return (
     <Article
       header="Music selection"
-      first="The Sightread catalog has three components: midishare, builtin, and local file uploads."
+      first="The AutoBand catalog has three components: midishare, builtin, and local file uploads."
     >
       <p>
-        Sightread includes works from <AboutLink href="https://midishare.com">midishare</AboutLink>,
+        AutoBand includes works from <AboutLink href="https://midishare.com">midishare</AboutLink>,
         as well as builtin music from the public domain.
       </p>
       <p>
         You can <AboutLink href="https://midishare.com/upload">upload</AboutLink> MIDI files to
         midishare where they’ll be available for the entire community. If you’d prefer to keep them
-        local, you can also upload them directly to Sightread which saves them in browser storage.
+        local, you can also upload them directly to AutoBand which saves them in browser storage.
       </p>
       <p>
         If you can’t find the music you’re looking for on midishare, a Google search is your best
         bet. Or you can send me an{' '}
-        <AboutLink href="mailto:midishare.dev@gmail.com">email</AboutLink> and I’ll try to help out.
+        <AboutLink href="mailto:fzj0007@auburn.edu">email</AboutLink> and I’ll try to help out.
       </p>
     </Article>
   )
@@ -157,7 +158,7 @@ function BrowserCompatibilitySection() {
   return (
     <Article
       header="Browser compatibility"
-      first="Sightread is fully compatible with the latest versions of Chrome and Firefox."
+      first="AutoBand is fully compatible with the latest versions of Chrome and Firefox."
     >
       <p>
         Plugging in a MIDI keyboard will not work on iOS or Safari. This is because Apple has not
@@ -169,14 +170,35 @@ function BrowserCompatibilitySection() {
   )
 }
 
+function RemainingTasks() {
+  return (
+    <Article header="Pending Tasks">
+      <p>
+        Future work:
+      </p>
+      <ul className="px-12 list-disc">
+
+        <li>Api call to Python Onset and Velocity backend to take the audio without Midi plugin.</li>
+        <li>MusicXML file upload and full Sheet Music display.</li>
+        <li> Comparing PianoRolls ( Progress tracking and song scoring to see improvement over time)</li>
+        <li>
+          Autogenerating practice lessons based on musician's progress. 
+        </li>
+        <li>Record a performance in free play and share it with a link.</li>
+        
+      </ul>
+    </Article>
+  )
+}
+
 function RoadmapSection() {
   return (
     <Article header="Roadmap">
       <p>
-        I have so many exciting ideas, but I have a full time job so progress is slow. Things I plan
-        to implement in future releases:
+        Future work:
       </p>
       <ul className="px-12 list-disc">
+
         <li>iOS App</li>
         <li>MusicXML file upload and full Sheet Music display.</li>
         <li>Progress tracking and song scoring to see improvement over time.</li>
@@ -195,8 +217,8 @@ function FeedbackSection() {
     <Article header="Feedback">
       <p>
         Found a bug or have a feature request? Please file an issue on{' '}
-        <AboutLink href="https://github.com/sightread/sightread/issues">GitHub</AboutLink> or send
-        an <AboutLink href="mailto:sightreadllc@gmail.com">email</AboutLink>.
+        <AboutLink href="">GitHub</AboutLink> or send
+        an <AboutLink href="">email</AboutLink>.
       </p>
     </Article>
   )

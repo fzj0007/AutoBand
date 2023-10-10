@@ -129,7 +129,7 @@ export function PlaySong() {
   return (
     <>
       <Head>
-        <title>Sightread: Playing</title>
+        <title>AutoBand: Playing</title>
       </Head>
       <div
         className={clsx(

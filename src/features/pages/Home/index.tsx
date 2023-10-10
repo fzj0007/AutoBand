@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Sightread</title>
+        <title>AutoBand</title>
       </Head>
       <div className="relative flex flex-col w-full min-h-[800px,100vh] text-white">
         <AppBar />

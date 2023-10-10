@@ -48,7 +48,7 @@ export default function FreePlay() {
   return (
     <>
       <Head>
-        <title>Sightread: Free play</title>
+        <title>AutoBand: Free play</title>
       </Head>
       <div className="w-screen h-screen flex flex-col">
         <TopBar

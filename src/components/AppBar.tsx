@@ -36,7 +36,7 @@ export default function AppBar() {
         <NavLink href={'/'} className="flex items-baseline text-white hover:text-purple-hover">
           <Logo height={24} width={24} className="relative top-[3px]" />
           <Sizer width={8} />
-          <span className="font-extralight text-2xl"> SIGHTREAD</span>
+          <span className="font-extralight text-2xl">AutoBand</span>
         </NavLink>
         <div className="hidden md:flex align-baseline gap-6 flex-grow justify-evenly whitespace-nowrap pl-16">
           {navItems.map((nav) => {
@@ -50,11 +50,11 @@ export default function AppBar() {
             )
           })}
           <NavLink
-            href={'https://github.com/sightread/sightread'}
+            href={''}
             className="pr-8 lgminus:pr-0 ml-auto flex gap-2 items-center text-white hover:text-purple-hover"
           >
-            <GitHub size={16} className="relative t-[2px]" />
-            GitHub
+            <div  className="relative t-[2px]" />
+            SignUp | Login
           </NavLink>
         </div>
       </div>

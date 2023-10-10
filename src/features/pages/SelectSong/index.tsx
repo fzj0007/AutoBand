@@ -62,7 +62,7 @@ export default function SelectSongPage() {
   return (
     <>
       <Head>
-        <title>Sightread: Select a song</title>
+        <title>AutoBand: Select a song</title>
       </Head>
       <SongPreviewModal
         show={!!selectedSongId}

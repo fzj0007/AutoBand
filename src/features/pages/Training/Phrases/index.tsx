@@ -102,7 +102,7 @@ export function Phrases() {
   return (
     <>
       <Head>
-        <title>Sightread: Phrases</title>
+        <title>AutoBand: Phrases</title>
       </Head>
       <MidiModal isOpen={isMidiModalOpen} onClose={() => setMidiModal(false)} />
       <div className={clsx('flex flex-col h-screen', 'h-[100dvh]')}>
